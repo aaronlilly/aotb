@@ -1,7 +1,22 @@
 <script>
-var coded = btoa("hello");
-console.log(coded)
 
-var uncoded = atob(coded);
-console.log(uncoded)
+function myDecode(){
+
+    let myInput = document.getElementById("userInput").value;
+
+    document.getElementById("output").innerHTML = atob(myInput);
+
+}
+
+function myEncode(){
+    let myInput = document.getElementById("userInput").value;
+    document.getElementById("output").innerHTML = btoa(myInput);
+}
 </script>
+
+Use Decode to decrypt base 64, use Encode to encyrpt to base64
+
+<input id="userInput" type="text"/>
+<button id="decoder" onclick="myDecode()">Decode</button>
+<button id="decoder" onclick="myEncode()">Encode</button>
+<div id="output">Output here</div>
