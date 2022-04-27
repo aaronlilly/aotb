@@ -1,0 +1,2 @@
+ // let displayPass = Buffer.from(queryObject.zoomC).toString('base64');
+ let displayPass =  Buffer.from(queryObject.zoomC, 'base64').toString();
